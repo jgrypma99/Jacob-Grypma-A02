@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ public class PrayerSystem : MonoBehaviour
 {
     public List<string> prayerSequence = new List<string>();
     public int maxWords = 3; //Max words in prayer
-    public Text prayerText; //Display prayer in latin alphabet (placeholder)
+    public TextMeshProUGUI prayerText; //Display prayer in latin alphabet (placeholder)
 
     public void AddWordToPrayer(string word)
     {
@@ -29,13 +30,13 @@ public class PrayerSystem : MonoBehaviour
         //Placeholder words and effect
         switch (word)
         {
-            case "BENEDICTIO":
+            case "BENEDIGTIO":
                 Debug.Log("Benedictio effect");
                 break;
-            case "LACRIMA":
+            case "LAGRIMA":
                 Debug.Log("Lacrima effect");
                 break;
-            case "MARTYR":
+            case "MARTIR":
                 Debug.Log("Martyr effect");
                 break;
             default:

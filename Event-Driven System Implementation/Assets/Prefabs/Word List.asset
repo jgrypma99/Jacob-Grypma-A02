@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Word List
   m_EditorClassIdentifier: 
   validWords:
-  - LACRIMA
-  - MARTYR
-  - BENEDICTIO
+  - LAGRIMA
+  - MARTIR
+  - BENEDIGTIO
