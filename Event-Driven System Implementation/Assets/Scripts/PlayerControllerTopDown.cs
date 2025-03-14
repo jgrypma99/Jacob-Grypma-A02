@@ -16,7 +16,7 @@ public class PlayerControllerTopDown : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Inventory = GameObject.Find("Inventory");
-        Inventory.SetActive(false);
+        //Inventory.SetActive(false);
     }
 
     // Update is called once per frame

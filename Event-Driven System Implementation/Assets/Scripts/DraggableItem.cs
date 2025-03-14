@@ -9,10 +9,12 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     //taken from this tutorial: https://www.youtube.com/watch?v=kWRyZ3hb1Vc&t=149s
     //modified for the purposes of this project to newGlyph an item instead of moving it
 
-    [HideInInspector] public Transform parentAfterDrag;
+    public GlyphData glyphData; //name and corresponding latin letter for each glyph
+
+
     public Image image;
-    public GameObject newGlyph;
-    private bool validDrop = false; // Track if dropped in a valid slot
+    public GameObject newGlyph; //Clone glyph when dragged into writing slot
+    private bool validDrop = false; //Track if dropped in a valid slot
 
     public void Start()
     {
@@ -23,11 +25,12 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         Debug.Log("Begin drag");
 
-        // Create a duplicate of the item
+        //Create a duplicate of the item
         newGlyph = Instantiate(gameObject, transform.position, Quaternion.identity);
         Canvas canvas = GetComponentInParent<Canvas>();
         if (canvas != null) newGlyph.transform.SetParent(canvas.transform, false);
 
+        //Fix weirdness that was causing glyph to not appear at mouse cursor when dragged
         RectTransform newGlyphRect = newGlyph.GetComponent<RectTransform>();
         RectTransform originalRect = GetComponent<RectTransform>();
 
@@ -40,7 +43,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         newGlyph.GetComponent<Image>().raycastTarget = false;
         newGlyph.transform.SetAsLastSibling();
 
-        validDrop = false; // Reset valid drop flag
+        validDrop = false; //Reset valid drop flag
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -57,7 +60,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         {
             if (!validDrop)
             {
-                Destroy(newGlyph); // Delete if dropped outside a valid slot
+                Destroy(newGlyph); //Delete if dropped outside a valid slot
             }
             else
             {
@@ -69,6 +72,12 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void SetValidDrop(bool isValid)
     {
         validDrop = isValid;
+    }
+
+    //retrieve letter from glyph
+    public string GetLetter()
+    {
+        return glyphData != null ? glyphData.correspondingLetter : "";
     }
 
 }

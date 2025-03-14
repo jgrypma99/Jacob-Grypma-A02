@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 85bc3957dc4cf5b459eff260d1b33f3d, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &48028023
@@ -197,7 +197,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -241357128, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -550,7 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: d74332efe6472b6469b37fefdcb57a51, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &112833451
@@ -575,7 +575,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 1081104076, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: c0490e0aeb365fe4b89b4dda3e88a036, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &187479670
@@ -676,7 +676,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -58786076, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -691,6 +691,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187479667}
+  m_CullTransparentMesh: 1
+--- !u!1 &249311047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 249311048}
+  - component: {fileID: 249311050}
+  - component: {fileID: 249311049}
+  m_Layer: 5
+  m_Name: Prayer Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &249311048
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249311047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1825696953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 112.27}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &249311049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249311047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 0.9294118, b: 0.6, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &249311050
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249311047}
   m_CullTransparentMesh: 1
 --- !u!1 &258267704
 GameObject:
@@ -742,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 5c78d0c1e3edfe441931c8e08436b96a, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &258267707
@@ -767,7 +901,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 763662934, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -833,7 +967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 6670edc540f87424c8ffb6874e5dd4c0, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &259013921
@@ -858,7 +992,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -997170360, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1309,7 +1443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 064976bc115d12049ae55950e7528910, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &434940430
@@ -1334,7 +1468,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1648418488, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1500,7 +1634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 8ed996a4cc607a64784522a4a78edce4, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &483458235
@@ -1525,7 +1659,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 2014324465, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1591,7 +1725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 48822df93ce3f91458ecb102eb548e82, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &488090366
@@ -1616,7 +1750,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 2143013152, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1759,6 +1893,138 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &562771334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562771335}
+  - component: {fileID: 562771338}
+  - component: {fileID: 562771337}
+  - component: {fileID: 562771336}
+  m_Layer: 5
+  m_Name: Submit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &562771335
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562771334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1825696953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 618.82, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &562771336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562771334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 562771337}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1825696957}
+        m_TargetAssemblyTypeName: WordBuilder, Assembly-CSharp
+        m_MethodName: SubmitWord
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &562771337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562771334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 33cd3b491748050418115b4d3a0b6534, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &562771338
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562771334}
+  m_CullTransparentMesh: 1
 --- !u!224 &563869506 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8955402756542129244, guid: a7caa9114eed9c74b903daa9ee40ac0c, type: 3}
@@ -1814,7 +2080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: c9d46faec63ff2d42bb08527622053d1, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &582355702
@@ -1839,7 +2105,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 835951971, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1989,7 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 95dfd4ed7caa2204fadf01f7961a5315, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &607341951
@@ -2014,7 +2280,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 1889903195, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2285,7 +2551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 5ff684b4bfeabe14ebf2cd802421cfd4, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &777923167
@@ -2310,7 +2576,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1457598389, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2476,7 +2742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: b8bea9f8a4a8c0a4a9169a2898751a43, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &815632945
@@ -2501,7 +2767,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 1367532730, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2992,7 +3258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 83c53e32e94292b429a51a763fcb3a13, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1017745989
@@ -3017,7 +3283,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -608445490, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3388,7 +3654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 60163664196393e42a505f020e4c49d3, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1197356437
@@ -3413,7 +3679,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 613973520, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3704,7 +3970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 5c56627a12195964a9945f50139059d1, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1383970664
@@ -3729,7 +3995,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1879754549, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3795,7 +4061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 9f8bb97c9247d6349927d69730358462, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1407249935
@@ -3820,7 +4086,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 72650949, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3886,7 +4152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: cfed246d755ebaf4ea3e03f0c8a751c8, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1417634179
@@ -3911,7 +4177,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1431824494, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4072,7 +4338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 5d14be788ceb72447a7d9418486c5155, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1527938708
@@ -4097,7 +4363,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -606288019, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4341,7 +4607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: cb28918508c56ea4980311122291aa5d, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1656433723
@@ -4366,7 +4632,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -808042765, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4711,7 +4977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 00f6f0b8cf0402941b014bcbd476654c, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1823303103
@@ -4736,7 +5002,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1406891799, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4764,6 +5030,8 @@ GameObject:
   - component: {fileID: 1825696956}
   - component: {fileID: 1825696955}
   - component: {fileID: 1825696954}
+  - component: {fileID: 1825696957}
+  - component: {fileID: 1825696958}
   m_Layer: 5
   m_Name: Prayer Altar
   m_TagString: Untagged
@@ -4785,6 +5053,8 @@ RectTransform:
   m_Children:
   - {fileID: 1489372317}
   - {fileID: 356824026}
+  - {fileID: 249311048}
+  - {fileID: 562771335}
   m_Father: {fileID: 1864138226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4860,6 +5130,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825696952}
   m_CullTransparentMesh: 1
+--- !u!114 &1825696957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825696952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d665008d9982bb4d9b563bdcca25a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glyphSlots:
+  - {fileID: 3429146572944264895}
+  - {fileID: 3429146573027707277}
+  - {fileID: 3429146572580785868}
+  - {fileID: 3429146573411097569}
+  - {fileID: 3429146571889931033}
+  - {fileID: 3429146573058808589}
+  - {fileID: 3429146571936111601}
+  - {fileID: 3429146572122199651}
+  - {fileID: 3429146573550633258}
+  - {fileID: 3429146573377690690}
+  wordList: {fileID: 11400000, guid: 4356a4b3530a27f48bb9aea8320cb64f, type: 2}
+  prayerSystem: {fileID: 1825696958}
+--- !u!114 &1825696958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825696952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b907c421d49fb14f87e8aef5da02a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prayerSequence: []
+  maxWords: 3
+  prayerText: {fileID: 0}
 --- !u!1001 &1861777688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5213,7 +5523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 13dfc988860f6274ea1806f6e3b7c3b2, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &1913576148
@@ -5238,7 +5548,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 1495137899, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -5776,7 +6086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d95125a01d21374da65adc4f74100c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentAfterDrag: {fileID: 0}
+  glyphData: {fileID: 11400000, guid: 2d1ba5e9fba250644a477664ec7ffbc1, type: 2}
   image: {fileID: 0}
   newGlyph: {fileID: 0}
 --- !u!114 &2079478633
@@ -5801,7 +6111,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1254892354, guid: 9906a97775dc0c443846667aea567100, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

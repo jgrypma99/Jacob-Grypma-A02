@@ -4,6 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//overwrites slot with new glyph when dragged into an already occupied slot
+
 public class OverwriteSlots : MonoBehaviour, IDropHandler
 {
     public void OnDrop(PointerEventData eventData)
