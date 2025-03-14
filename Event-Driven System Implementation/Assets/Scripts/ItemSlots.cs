@@ -17,9 +17,10 @@ public class ItemSlots : MonoBehaviour, IDropHandler
 
             if (draggedItem != null && draggedItem.newGlyph != null)
             {
-                // Set the newGlyph as the child of the new slot
+                draggedItem.SetValidDrop(true); // Mark as valid drop
+
                 draggedItem.newGlyph.transform.SetParent(transform);
-                draggedItem.newGlyph.transform.localPosition = Vector3.zero; // Align properly
+                draggedItem.newGlyph.transform.localPosition = Vector3.zero;
             }
         }
     }

@@ -8,11 +8,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     //allow dragging and dropping of items between inventory slots
     //taken from this tutorial: https://www.youtube.com/watch?v=kWRyZ3hb1Vc&t=149s
     //modified for the purposes of this project to newGlyph an item instead of moving it
-    
-    [HideInInspector ]public Transform parentAfterDrag;
+
+    [HideInInspector] public Transform parentAfterDrag;
     public Image image;
-    //newGlyph of the glyph to build the words
     public GameObject newGlyph;
+    private bool validDrop = false; // Track if dropped in a valid slot
 
     public void Start()
     {
@@ -23,12 +23,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         Debug.Log("Begin drag");
 
-        //create a duplicate of the glyph
-        newGlyph = Instantiate(gameObject, transform.position, Quaternion.identity, transform.root);
-        newGlyph.GetComponent<Image>().raycastTarget = false; //prevent issues by disabling raycast
-        newGlyph.GetComponent<DraggableItem>().newGlyph = newGlyph; //maintian reference to new glyph
-        
-        // Reset RectTransform to prevent scaling/position issues
+        // Create a duplicate of the item
+        newGlyph = Instantiate(gameObject, transform.position, Quaternion.identity);
+        Canvas canvas = GetComponentInParent<Canvas>();
+        if (canvas != null) newGlyph.transform.SetParent(canvas.transform, false);
+
         RectTransform newGlyphRect = newGlyph.GetComponent<RectTransform>();
         RectTransform originalRect = GetComponent<RectTransform>();
 
@@ -37,27 +36,39 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         newGlyphRect.pivot = originalRect.pivot;
         newGlyphRect.sizeDelta = originalRect.sizeDelta;
 
-        //change parent to canvas to appear on top
+        newGlyph.transform.position = Input.mousePosition;
+        newGlyph.GetComponent<Image>().raycastTarget = false;
         newGlyph.transform.SetAsLastSibling();
+
+        validDrop = false; // Reset valid drop flag
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("Dragging");
-
-        //Move the new glyph
-        newGlyph.transform.position = Input.mousePosition;
-        
+        if (newGlyph != null) newGlyph.transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("End drag");
-        
+
         if (newGlyph != null)
         {
-            newGlyph.GetComponent<Image>().raycastTarget = true; //re-enable raycasting
+            if (!validDrop)
+            {
+                Destroy(newGlyph); // Delete if dropped outside a valid slot
+            }
+            else
+            {
+                newGlyph.GetComponent<Image>().raycastTarget = true;
+            }
         }
+    }
+
+    public void SetValidDrop(bool isValid)
+    {
+        validDrop = isValid;
     }
 
 }
